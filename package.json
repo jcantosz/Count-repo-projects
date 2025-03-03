@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@octokit/auth-app": "^7.1.5",
+    "@octokit/core": "^6.1.4",
+    "@octokit/plugin-paginate-graphql": "^5.2.4",
+    "@octokit/plugin-retry": "^7.1.4",
+    "@octokit/plugin-throttling": "^9.4.0",
+    "node-fetch": "^3.3.2"
+  },
+  "engines" : { 
+    "npm" : ">=10.2.3",
+    "node" : ">=20.10.0"
+  }
+}

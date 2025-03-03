@@ -1,0 +1,28 @@
+name: "List projects associated with repo"
+description: "List unique projects and count the number of issues associated with one or more projects for a given repo"
+
+inputs:
+  owner:
+    description: "Repository owner"
+    required: true
+  repo:
+    description: "Repository name"
+    required: true
+
+  github_token:
+    description: "GitHub token"
+    required: false
+  github_app_id:
+    description: "GitHub App ID"
+    required: false
+  github_private_key:
+    description: "GitHub Private Key"
+    required: false
+  github_installation_id:
+    description: "GitHub Installation ID"
+    required: false
+
+runs:
+  using: "node20"
+  main: "index.js"
+
