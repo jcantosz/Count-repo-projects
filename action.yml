@@ -1,14 +1,7 @@
-name: "List projects associated with repo"
-description: "List unique projects and count the number of issues associated with one or more projects for a given repo"
+name: "List Unique Projects"
+description: "List unique projects and count the number of issues associated with one or more projects"
 
 inputs:
-  owner:
-    description: "Repository owner"
-    required: true
-  repo:
-    description: "Repository name"
-    required: true
-
   github_token:
     description: "GitHub token"
     required: false
@@ -21,6 +14,19 @@ inputs:
   github_installation_id:
     description: "GitHub Installation ID"
     required: false
+  api_url:
+    description: "GitHub API URL"
+    required: false
+  repos_file:
+    description: "Path to the file containing the list of repositories (one repo per line)"
+    required: true
+  org_name:
+    description: "Organization name"
+    required: true
+  output_file:
+    description: "Output CSV file name"
+    required: false
+    default: "output.csv"
 
 runs:
   using: "node20"
